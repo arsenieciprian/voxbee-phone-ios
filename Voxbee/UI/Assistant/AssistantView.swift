@@ -20,18 +20,24 @@
 import SwiftUI
 
 struct AssistantView: View {
-	
-	@ObservedObject private var coreContext = CoreContext.shared
-	
-	var body: some View {
-		if SharedMainViewModel.shared.displayProfileMode && coreContext.loggedIn {
-			ProfileModeFragment()
-		} else {
-			LoginFragment()
-		}
-	}
+    
+    @ObservedObject private var coreContext = CoreContext.shared
+    // Creăm "motorul" care va prelua userul și parola
+    @StateObject private var accountLoginViewModel = AccountLoginViewModel()
+    
+    var body: some View {
+        if SharedMainViewModel.shared.displayProfileMode && coreContext.loggedIn {
+            ProfileModeFragment()
+        } else {
+            // Punem NavigationView ca formularul să aibă designul corect
+            NavigationView {
+                ThirdPartySipAccountLoginFragment(accountLoginViewModel: accountLoginViewModel)
+            }
+            .navigationViewStyle(StackNavigationViewStyle())
+        }
+    }
 }
 
 #Preview {
-	LoginFragment()
+    AssistantView()
 }

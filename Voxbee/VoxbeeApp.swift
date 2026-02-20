@@ -150,7 +150,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
 }
 
 @main
-struct LinphoneApp: App {
+struct VoxbeeApp: App {
 	@Environment(\.scenePhase) var scenePhase
 	@UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
 
@@ -282,7 +282,7 @@ struct RootView: View {
 	
 	
 	var showWelcome: Bool {
-		!sharedMainViewModel.welcomeViewDisplayed
+		false
 	}
 
 	var showAssistant: Bool {
