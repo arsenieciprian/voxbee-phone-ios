@@ -26,11 +26,11 @@ class AccountLoginViewModel: ObservableObject {
 	
 	@Published var username: String = ""
 	@Published var passwd: String = ""
-	@Published var domain: String = "sip.linphone.org"
+	@Published var domain: String = ""
 	@Published var displayName: String = ""
-	@Published var transportType: String = "TLS"
+	@Published var transportType: String = "UDP"
 	@Published var authId: String = ""
-	@Published var outboundProxy: String = ""
+	@Published var outboundProxy: String = "flexisip.voxbee.ro"
 	
 	private var mCoreDelegate: CoreDelegate!
 	
@@ -159,8 +159,8 @@ class AccountLoginViewModel: ObservableObject {
 				core.defaultAccount = account
 				
 				DispatchQueue.main.async {
-					self.domain = "sip.linphone.org"
-					self.transportType = "TLS"
+					self.domain = ""
+					self.transportType = "UDP"
 					self.authId = ""
 					self.outboundProxy = ""
 				}

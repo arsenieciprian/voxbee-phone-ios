@@ -114,8 +114,8 @@ class CorePreferences {
 	
 	var defaultDomain: String {
 		get {
-			let raw = config.getString(section: "app", key: "default_domain", defaultString: "sip.linphone.org")
-			return safeString(raw, defaultValue: "sip.linphone.org")
+			let raw = config.getString(section: "app", key: "default_domain", defaultString: "")
+			return safeString(raw, defaultValue: "")
 		}
 		set {
 			config.setString(section: "app", key: "default_domain", value: newValue)

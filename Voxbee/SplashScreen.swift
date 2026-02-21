@@ -20,23 +20,21 @@
 import SwiftUI
 
 struct SplashScreen: View {
-	var body: some View {
-		ZStack {
-			Color.white
-				.ignoresSafeArea()
-			
-			Image("linphone")
-				.resizable()
-				.renderingMode(.template)
-				.aspectRatio(contentMode: .fit)
-				.frame(width: 240, height: 128)
-				.foregroundColor(ThemeManager.shared.currentTheme.main500)
-		}
-		.frame(maxWidth: .infinity, maxHeight: .infinity)
-		.ignoresSafeArea(.all)
-	}
+    var body: some View {
+        ZStack {
+            Color.white
+                .ignoresSafeArea()
+            
+            Image("voxbee_logo")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 240, height: 128)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .ignoresSafeArea(.all)
+    }
 }
 
 #Preview {
-	SplashScreen()
+    SplashScreen()
 }
