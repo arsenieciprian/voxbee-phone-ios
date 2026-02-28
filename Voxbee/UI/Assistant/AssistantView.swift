@@ -22,14 +22,24 @@ import SwiftUI
 struct AssistantView: View {
     
     @ObservedObject private var coreContext = CoreContext.shared
-    // Creăm "motorul" care va prelua userul și parola
+    
+    // Adăugăm managerul de permisiuni pentru a decide ce ecran afișăm
+    @ObservedObject private var permissionManager = PermissionManager.shared
+    
+    // Motorul pentru login
     @StateObject private var accountLoginViewModel = AccountLoginViewModel()
     
     var body: some View {
-        if SharedMainViewModel.shared.displayProfileMode && coreContext.loggedIn {
+        // Pasul 1: Dacă permisiunile NU au fost afișate încă, pornim cu ele
+        if !permissionManager.allPermissionsHaveBeenDisplayed {
+            PermissionsFragment()
+        }
+        // Pasul 2: Dacă s-a trecut de permisiuni și suntem logați, verificăm modul de profil
+        else if SharedMainViewModel.shared.displayProfileMode && coreContext.loggedIn {
             ProfileModeFragment()
-        } else {
-            // Punem NavigationView ca formularul să aibă designul corect
+        }
+        // Pasul 3: Dacă totul este pregătit, afișăm direct formularul de login
+        else {
             NavigationView {
                 ThirdPartySipAccountLoginFragment(accountLoginViewModel: accountLoginViewModel)
             }

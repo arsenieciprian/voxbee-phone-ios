@@ -30,7 +30,7 @@ class AccountLoginViewModel: ObservableObject {
 	@Published var displayName: String = ""
 	@Published var transportType: String = "UDP"
 	@Published var authId: String = ""
-	@Published var outboundProxy: String = "flexisip.voxbee.ro"
+	@Published var outboundProxy: String = "proxy.voxbee.ro"
 	
 	private var mCoreDelegate: CoreDelegate!
 	
