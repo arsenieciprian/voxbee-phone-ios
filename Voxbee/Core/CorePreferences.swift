@@ -170,7 +170,7 @@ class CorePreferences {
 	
 	var disableChatFeature: Bool {
 		get {
-			config.getBool(section: "ui", key: "disable_chat_feature", defaultValue: false)
+			config.getBool(section: "ui", key: "disable_chat_feature", defaultValue: true)
 		}
 		set {
 			config.setBool(section: "ui", key: "disable_chat_feature", value: newValue)
