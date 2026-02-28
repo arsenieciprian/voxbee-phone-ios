@@ -1922,7 +1922,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Voxbee/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Voxbee Phone";
-				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_NSCalendarsUsageDescription = "Deprecated - Prior to iOS 17 full calendar access is required";
 				INFOPLIST_KEY_NSCalendarsWriteOnlyAccessUsageDescription = "";
@@ -1984,7 +1984,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Voxbee/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Voxbee Phone";
-				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_NSCalendarsUsageDescription = "Deprecated - Prior to iOS 17 full calendar access is required";
 				INFOPLIST_KEY_NSCalendarsWriteOnlyAccessUsageDescription = "";
