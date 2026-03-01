@@ -179,7 +179,7 @@ class CorePreferences {
 	
 	var disableMeetings: Bool {
 		get {
-			config.getBool(section: "ui", key: "disable_meetings_feature", defaultValue: false)
+			config.getBool(section: "ui", key: "disable_meetings_feature", defaultValue: true)
 		}
 		set {
 			config.setBool(section: "ui", key: "disable_meetings_feature", value: newValue)
@@ -233,7 +233,7 @@ class CorePreferences {
 	
 	var hideSipAddresses: Bool {
 		get {
-			config.getBool(section: "ui", key: "hide_sip_addresses", defaultValue: false)
+			config.getBool(section: "ui", key: "hide_sip_addresses", defaultValue: true)
 		}
 		set {
 			config.setBool(section: "ui", key: "hide_sip_addresses", value: newValue)
