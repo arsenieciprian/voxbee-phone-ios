@@ -37,13 +37,11 @@ final class ThemeManager: ObservableObject {
     static let shared = ThemeManager()
     private let themeKey = "selectedTheme"
     
-    // Voxbee este acum tema principală la prima pornire
-    @Published var currentTheme: Theme = ThemeManager.voxbee
+    @Published var currentTheme: Theme = ThemeManager.orange
     
     private init() {
         let storedName = UserDefaults.standard.string(forKey: themeKey)
-        // Dacă nu există o temă salvată anterior, folosim Voxbee
-        currentTheme = themes[storedName ?? ""] ?? ThemeManager.voxbee
+        currentTheme = themes[storedName ?? ""] ?? ThemeManager.orange
     }
     
     func applyTheme(named name: String) {
@@ -57,7 +55,6 @@ final class ThemeManager: ObservableObject {
     // MARK: - Theme Presets
     
     let themes: [String: Theme] = [
-        voxbee.name: voxbee,
         orange.name: orange,
         yellow.name: yellow,
         green.name: green,
@@ -67,23 +64,13 @@ final class ThemeManager: ObservableObject {
         purple.name: purple
     ]
     
-    // Definiția culorilor Voxbee (bazată pe logo-ul tău albastru)
-    static let voxbee = Theme(
-        name: "voxbee",
-        main100: Color(hex: "#D6EBFB"),        // Fundal deschis
-        main100Alpha50: Color(hex: "#80D6EBFB"),
-        main300: Color(hex: "#81C2F3"),        // Albastru mediu
-        main500: Color(hex: "#389FED"),        // Albastrul principal Voxbee
-        main700: Color(hex: "#2A77B1")         // Albastru închis pentru interacțiuni
-    )
-    
     static let orange = Theme(
-        name: "orange",
-        main100: Color(hex: "#FFEACB"),
-        main100Alpha50: Color(hex: "#80FFEACB"),
-        main300: Color(hex: "#FFB266"),
-        main500: Color(hex: "#FF5E00"),
-        main700: Color(hex: "#B72D00")
+            name: "orange",
+            main100: Color(hex: "#D6EBFB"),        // Albastru foarte deschis
+            main100Alpha50: Color(hex: "#80D6EBFB"),
+            main300: Color(hex: "#81C2F3"),        // Albastru mediu
+            main500: Color(hex: "#389FED"),        // Albastrul principal Voxbee
+            main700: Color(hex: "#2A77B1")         // Albastru închis
     )
     
     static let yellow = Theme(
