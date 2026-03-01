@@ -10,37 +10,37 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>org.linphone.phone</string>
+			<string>com1.voxbee.sip</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>linphone-mention</string>
+				<string>voxbee-mention</string>
 			</array>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>org.linphone.phone</string>
+			<string>com1.voxbee.sip</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>linphone-message</string>
+				<string>voxbee-message</string>
 			</array>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>org.linphone.phone</string>
+			<string>com1.voxbee.sip</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>linphone-config</string>
+				<string>voxbee-config</string>
 			</array>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>org.linphone.phone</string>
+			<string>com1.voxbee.sip</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>sip</string>
@@ -50,7 +50,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>org.linphone.phone</string>
+			<string>com1.voxbee.sip</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>sips</string>
@@ -60,47 +60,47 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>org.linphone.phone</string>
+			<string>com1.voxbee.sip</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>sip-linphone</string>
+				<string>sip-voxbee</string>
 			</array>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>org.linphone.phone</string>
+			<string>com1.voxbee.sip</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>sips-linphone</string>
+				<string>sips-voxbee</string>
 			</array>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>org.linphone.phone</string>
+			<string>com1.voxbee.sip</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>linphone-sip</string>
+				<string>voxbee-sip</string>
 			</array>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>org.linphone.phone</string>
+			<string>com1.voxbee.sip</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>linphone-sips</string>
+				<string>voxbee-sips</string>
 			</array>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>org.linphone.phone</string>
+			<string>com1.voxbee.sip</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>tel</string>
@@ -110,17 +110,17 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>org.linphone.phone</string>
+			<string>com1.voxbee.sip</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>org.linphone</string>
+				<string>voxbee</string>
 			</array>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>org.linphone.phone</string>
+			<string>com1.voxbee.sip</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>callto</string>

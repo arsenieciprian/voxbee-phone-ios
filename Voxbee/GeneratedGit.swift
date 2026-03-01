@@ -1,7 +1,7 @@
 import Foundation
 
 public enum AppGitInfo {
-    public static let branch = "voxbee-ios"
-    public static let commit = "b45959d9a"
-    public static let tag = "6.1.0-alpha"
+    public static let branch = "main"
+    public static let commit = "85a97ad6"
+    public static let tag = "no-tag"
 }
