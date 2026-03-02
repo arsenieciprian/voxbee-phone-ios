@@ -28,8 +28,8 @@ automatically_accept_direction=2 #receive only
 
 [app]
 tunnel=disabled
-auto_download_incoming_voice_recordings=1
-auto_download_incoming_icalendars=1
+auto_download_incoming_voice_recordings=0
+auto_download_incoming_icalendars=0
 
 [tunnel]
 host=

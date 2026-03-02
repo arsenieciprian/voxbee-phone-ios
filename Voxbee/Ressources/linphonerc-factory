@@ -45,11 +45,12 @@ store_friends=0
 record_aware=1
 
 [account_creator]
-url=https://subscribe.linphone.org/api/
+url=
 backend=1
 
 [lime]
 lime_update_threshold=86400
+enabled=0
 
 [alerts]
 alerts_enabled=1
