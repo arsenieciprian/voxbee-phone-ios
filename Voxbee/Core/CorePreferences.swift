@@ -233,7 +233,7 @@ class CorePreferences {
 	
 	var hideSipAddresses: Bool {
 		get {
-			config.getBool(section: "ui", key: "hide_sip_addresses", defaultValue: true)
+			config.getBool(section: "ui", key: "hide_sip_addresses", defaultValue: false)
 		}
 		set {
 			config.setBool(section: "ui", key: "hide_sip_addresses", value: newValue)

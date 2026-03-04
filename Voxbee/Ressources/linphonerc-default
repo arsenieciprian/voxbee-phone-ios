@@ -2,7 +2,7 @@
 ## Start of default rc
 
 [sip]
-contact="Linphone iPhone" <sip:linphone.iphone@unknown-host>
+contact="Voxbee Phone" <sip:voxbee.phone@unknown-host>
 use_info=0
 use_ipv6=1
 keepalive_period=30000
